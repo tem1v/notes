@@ -1,0 +1,126 @@
+body{
+	background-color: rgb(224, 224, 224);
+}
+
+.notes-block{
+	padding: 50px 100px;
+}
+.notes-list{
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	grid-column-gap: 40px;
+	grid-row-gap: 40px;
+	
+}
+.note{
+	background-color: rgb(255, 248, 206);
+	width: auto;
+	max-width: 300px;
+	min-width: 100px;
+	border-radius: 0px;
+	padding: 10px 20px 10px 20px;
+	height: 300px;
+	
+	-webkit-box-shadow: 13px 17px 16px -4px rgba(34, 60, 80, 0.2);
+	-moz-box-shadow: 13px 17px 16px -4px rgba(34, 60, 80, 0.2);
+	box-shadow: 13px 17px 16px -4px rgba(34, 60, 80, 0.2);
+	
+	transition: color 0.1s ease;
+}
+.note:hover{
+	background-color: rgb(255, 251, 226);
+}
+
+.title ul{
+	padding: 10px 0 0 0;
+	list-style-type: none;
+	display: flex;
+	justify-content: space-between;
+}
+
+.delete-button{
+	margin: 0px 0px;
+	background-color: transparent;
+    border: none;
+	transition: transform 0.1s ease;
+}
+
+.save-button{
+	margin: 0px 0px;
+	background-color: transparent;
+    border: none;
+	transition: transform 0.1s ease;
+}
+
+.delete-button img{
+	width: 30px;
+    height: 30px;
+}
+
+.save-button img{
+	width: 30px;
+    height: 30px;
+}
+
+.delete-button img:hover{
+	transform: scale(1.2);
+	fill:red;
+}
+
+.save-button img:hover{
+	transform: scale(1.2);
+}
+
+.title-input{
+	margin: 0px 0px;
+	padding: 5px 0;
+	color:black;
+	font-size: 20px;
+	font-weight: bold;
+	width: 200px;
+	font-family:Arial, Helvetica, sans-serif;
+	outline: none;
+	border: none;
+	background-color: transparent;
+}
+
+
+.text-block{
+	font-family:Arial, Helvetica, sans-serif;
+	color:rgb(100, 100, 100);
+	font-size:16px;
+}
+
+.text-block-textarea{
+	margin: 0px 0px;
+	padding: 5px 0;
+	color:rgb(100, 100, 100);
+	font-size: 16px;
+	width: 250px;
+	height: 200px;
+	font-family:Arial, Helvetica, sans-serif;
+	outline: none;
+	border: none;
+	background-color: transparent;
+	resize: none;
+}
+
+.create-button{
+	border: none;
+	border-radius: 90px;
+	height:80px;
+	width: 80px;
+	font-family:Arial, Helvetica, sans-serif;
+	position: fixed;
+	bottom: 20px;
+	left: 1800px;
+	background-color: white;
+	color: grey;
+	font-size: 60px;
+	transition: background-color 0.2s ease;
+}
+.create-button:hover{
+	background-color: rgb(180, 180, 180);
+}
